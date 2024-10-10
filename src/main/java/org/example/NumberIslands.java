@@ -7,11 +7,15 @@ public class NumberIslands {
             try {
                 int N, M;
                 Scanner scanner = new Scanner(System.in);
+
                 System.out.println("Enter the number of rows: ");
                 N = scanner.nextInt();
+
                 System.out.println("Enter the number of columns: ");
                 M = scanner.nextInt();
+
                 scanner.nextLine();
+
                 int[][] mat = new int[N][M];
                 if (!isValidMatrix(mat)){
                     System.out.println("Invalid matrix boundaries. Please enter a matrix between a size of 2 x 500.");
